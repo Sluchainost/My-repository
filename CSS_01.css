@@ -1,0 +1,60 @@
+h1{
+    color:red;
+}
+p,li{
+    color:green;
+}
+li{
+    list-style-type: "\1F44D";
+}
+.special {
+    color: orange;
+    font-weight: bold;
+  }
+  li em {
+    color: rebeccapurple;
+    font-weight: bolder;
+  }
+  h1+p{
+    font-size: 200%;
+  }
+  a:link {
+    color: pink;
+  }
+  a:visited {
+    color: green;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  body h1 + p .special {
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+  }
+  .outer {
+    border: 5px solid black;
+  }
+  
+  .box {
+    padding: 10px;
+    width: calc(100% - 50px);
+    background-color: rebeccapurple;
+    color: white;
+  }
+  .koks {
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    transform: rotate(0.8turn);
+  }
+  body {
+    background-color: pink;
+  }
+  
+  @media (max-width: 30em) {
+    body {
+      background-color: blue;
+    }
+  }
