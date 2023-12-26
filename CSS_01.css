@@ -50,11 +50,11 @@ li{
     transform: rotate(0.8turn);
   }
   body {
-    background-color: pink;
+    background-color: blue;
   }
   
-  @media (min-width: 50em) {
+  @media (min-width: 100em) {
     body {
-      background-color: blue;
+      background-color: pink;
     }
   }
