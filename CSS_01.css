@@ -53,7 +53,7 @@ li{
     background-color: blue;
   }
   
-  @media (min-width: 100em) {
+  @media (min-width: 1000em) {
     body {
       background-color: pink;
     }
