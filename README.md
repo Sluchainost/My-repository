@@ -1,1 +1,1 @@
-just learning
+just learning HTML, CSS, PYTHON.
