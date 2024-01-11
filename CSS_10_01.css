@@ -1,0 +1,30 @@
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  width: 70%;
+  max-width: 960px;
+  margin: 20px auto;
+}
+
+button {
+  font-size: 18px;
+  line-height: 1.5;
+  width: 15%;
+}
+
+div {
+  height: 100px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+button:first-child {
+    order: 1;                  /*наибольшее значение стоит самым последним в списке*/
+  }
+  button:last-child {
+    order: -1;                /*наименьшее значение стоит самым первым в списке*/
+  }

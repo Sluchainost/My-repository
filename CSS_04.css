@@ -1,0 +1,89 @@
+table {
+    table-layout: fixed; /*уравнивает длину всех строк под длину их заголовков*/
+    width: 100%;
+    border-collapse: collapse /*соединяет границы в таблице*/;
+    border: 3px solid purple; /*дает толщину и цвет границе*/
+  }
+  
+  thead th:nth-child(1) {
+    width: 30%;  /*задает ширину 1 заголовка в голове*/
+  }
+  
+  thead th:nth-child(2) {
+    width: 20%; /*задает ширину 2 заголовка в голове*/
+  }
+  
+  thead th:nth-child(3) {
+    width: 15%; /*задает ширину 3 заголовка в голове*/
+  }
+  
+  thead th:nth-child(4) {
+    width: 35%; /*задает ширину 4 заголовка в голове*/
+  }
+  
+  th,
+  td {
+    padding: 20px;  /*растояние между заголовками и контентом таблицы*/
+  }
+
+  html {
+    font-family: "helvetica neue", helvetica, arial, sans-serif; /*стиль текста который наследует контент таблицы*/
+  }
+  
+  thead th,
+  tfoot th {
+    font-family: "Rock Salt", cursive; /*шрифт заголовков головы и низа*/
+  }
+  
+  th {
+    letter-spacing: 2px; /*растояние между буквами заголовков таблицы*/
+  }
+  
+  td {
+    letter-spacing: 1px;  /*растояние между буквами контента таблицы */
+  }
+  
+  tbody td {
+    text-align: center; /*ставит контент внутри таблицы по центу*/
+  }
+  
+  tfoot th {
+    text-align: right; /*сдвигает заголовок низа вправо*/
+  }
+
+  thead, tfoot {
+    background: url(leopardskin.jpg);/*устанавливает фоновое изображение на верх и низ таблицы*/
+    color: white;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  thead th, tfoot th, tfoot td {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.5)); /*накладывает прозрачный черный цвет на тело и низ заголовков таблиц и содержания низа*/
+    border: 3px solid purple;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: #ff33cc; /*дает фоновый цвет каждому четному ребенку в теле таблицы*/
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #e495e4; /*дает фоновый цвет каждому нечетному ребенку в теле таблицы*/
+  }
+  
+  tbody tr {
+    background-image: url(noise.png); /*устанавливает фоновое изображение*/
+  }
+  
+  table {
+    background-color: #ff33cc;
+  }
+
+  caption {
+    font-family: "Rock Salt", cursive; /* шрифт */
+    padding: 20px;
+    font-style: italic; /*шрифт*/
+    caption-side: bottom; /*определяет местоположение заголовка снизу и сверху */
+    color: #666;
+    text-align: right; /*определяет местоположение заголовка слева и справа*/
+    letter-spacing: 1px;
+  }

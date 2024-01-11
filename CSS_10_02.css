@@ -1,0 +1,58 @@
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: purple;
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+article {
+  padding: 10px;
+  margin: 10px;
+  background: aqua;
+}
+
+/* Add your flexbox CSS below here */
+
+section {
+  display: flex;  /*все дочерние элементы устанавливаются в виде flex блоков*/
+}
+
+article {
+  flex: 1 200px;
+}
+
+article:nth-of-type(3) {  
+/* мы устанавливаем третий <article>, чтобы его дети были в макете в виде flex блоков но на этот раз мы располагаем их как столбец.*/
+  flex: 3 200px;
+  display: flex;
+  flex-flow: column;
+}
+
+article:nth-of-type(3) div:first-child {
+  flex: 1 100px;     /*устанавливает минимальную высоту в 100px*/
+  display: flex;     /*устанавливает дочерние элементы (<bottom>) в виде flex блоков*/
+  flex-flow: row wrap;   /*перенос блоков*/
+  align-items: center;    /*выравнивае по центру*/
+  justify-content: space-around;
+}
+
+button {
+  flex: 1 auto;  /*размер кнопки изменяется при изменении размеров окна*/
+  margin: 5px;
+  font-size: 18px;
+  line-height: 1.5;
+}

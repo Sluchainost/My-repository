@@ -1,0 +1,12 @@
+a[title] {
+    border: 8px solid pink;
+}
+ a[href*="contact"] {
+    border: 8px solid orange;
+}
+ a[href^="https"] {
+    border: 8px solid green;
+ }
+ ul {
+    font-size: 250%;
+ }
